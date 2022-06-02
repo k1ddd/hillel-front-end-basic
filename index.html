@@ -14,6 +14,7 @@
         <div class="main__content">
             <fieldset>
                 <legend>Укажите Ваши данные</legend>
+                <br>
                 <form>
                     <label>
                         <span>Ваше имя</span>
@@ -38,18 +39,47 @@
                         </label>
                     </p>
 
-                    <button type="submit">Отправить</button>
+            </fieldset>
+            <fieldset>
+
+                <legend>Данные про Ваш курс</legend>
+                <br>
+                <label>
+                    <span>
+                        Выберите ваш курс
+                    </span>
+                    <select>
+                        <option selected disabled value="0">Выберите ваш курс</option>
+                        <option value="1">Front end basic</option>
+                        <option value="2">Front end Pro</option>
+                        <option value="3">JavaScript</option>
+                        <option value="3">React</option>
+                    </select>
+                </label>
+                <br>
+                <p>
+                    <label>
+
+                        <span>
+                            Выполняете ли вы домашнее задание:
+                        </span>
+                        <br>
+                        <input type="radio" name="yes" checked>
+                        Да, выполняю
+                    </label><br>
+                    <label>
+                        <input type="radio" name="yes">
+                        Нет, не выполняю
+                    </label>
+                </p>
                 </form>
             </fieldset>
+
+            <button type="submit">Отправить</button>
+
+
+
         </div>
-        <label>
-            <select>
-                <option selected value="0" disabled>выберите количество</option>
-                <option value="1">Один </option>
-                <option value="2">Два </option>
-                <option value="3"> Три</option>
-            </select>
-        </label>
 
 
     </div>
