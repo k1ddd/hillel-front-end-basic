@@ -12,13 +12,44 @@
 
     <div class="main">
         <div class="main__content">
-            <h1>Forms</h1>
-            <form> <label for="nameId">ENTER YOUR TEXT</label>
-                <input id="nameId" type="text" name="name" placeholder="Enter name">
-            </form>
-            <input type="email" name="email" id="" required>
-            <button type="submit">Send</button>
+            <fieldset>
+                <legend>Укажите Ваши данные</legend>
+                <form>
+                    <label>
+                        <span>Ваше имя</span>
+                        <input required type="text" name="name" placeholder="Введите свое имя">
+                    </label>
+                    <p>
+                        <label>
+                            <span>Ваша фамилия</span>
+                            <input required type="text" name="secondName" placeholder="Введите свою фамилию">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span>Электронная почта</span>
+                            <input required type="email" placeholder="Введите свою почту">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span>Номер телефона</span>
+                            <input required type="tel" placeholder="Введите свой телефон ">
+                        </label>
+                    </p>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </fieldset>
         </div>
+        <label>
+            <select>
+                <option selected value="0" disabled>выберите количество</option>
+                <option value="1">Один </option>
+                <option value="2">Два </option>
+                <option value="3"> Три</option>
+            </select>
+        </label>
 
 
     </div>
