@@ -6,54 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Some page</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="main">
-        <div class="main__content">
+
+    <div class="container">
+        <form action="https://fom.in.ua/echo" method="post">
             <fieldset>
                 <legend>Укажите Ваши данные</legend>
                 <br>
-                <form>
+                <label>
+                    <span>Ваше имя:</span>
+                    <input required type="text" name="name" placeholder="Введите свое имя">
+                </label>
+                <p>
                     <label>
-                        <span>Ваше имя</span>
-                        <input required type="text" name="name" placeholder="Введите свое имя">
+                        <span>Ваша фамилия:</span>
+                        <input required type="text" name="secondName" placeholder="Введите свою фамилию">
                     </label>
-                    <p>
-                        <label>
-                            <span>Ваша фамилия</span>
-                            <input required type="text" name="secondName" placeholder="Введите свою фамилию">
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <span>Электронная почта</span>
-                            <input required type="email" placeholder="Введите свою почту">
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <span>Номер телефона</span>
-                            <input required type="tel" placeholder="Введите свой телефон ">
-                        </label>
-                    </p>
-
+                </p>
+                <p>
+                    <label>
+                        <span>Электронная почта:</span>
+                        <input required type="email" name="email" placeholder="Введите свою почту">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Номер телефона: </span>
+                        <input required type="tel" name="Tel" placeholder="Введите свой телефон ">
+                    </label>
+                </p>
             </fieldset>
+            <br>
             <fieldset>
 
                 <legend>Данные про Ваш курс</legend>
                 <br>
                 <label>
                     <span>
-                        Выберите ваш курс
+                        Выберите ваш курс:
                     </span>
-                    <select>
-                        <option selected disabled value="0">Выберите ваш курс</option>
-                        <option value="1">Front end basic</option>
-                        <option value="2">Front end Pro</option>
-                        <option value="3">JavaScript</option>
-                        <option value="3">React</option>
+                    <select name="What_coure_you_choice">
+                        <option selected disabled value="0">Выберите курс</option>
+                        <option value="Front end basic">Front end basic</option>
+                        <option value="Front end Pro">Front end Pro</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="React">React</option>
                     </select>
                 </label>
                 <br>
@@ -64,24 +71,28 @@
                             Выполняете ли вы домашнее задание:
                         </span>
                         <br>
-                        <input type="radio" name="yes" checked>
+                        <input type="radio" name="homeWork" value="yes_i_did" checked required>
                         Да, выполняю
                     </label><br>
                     <label>
-                        <input type="radio" name="yes">
+                        <input type="radio" name="homeWork" value="no_i_did">
                         Нет, не выполняю
                     </label>
                 </p>
-                </form>
-            </fieldset>
-
+                <label>
+                    <span>Дополнительная информация:</span>
+                    <br>
+                    <input checked type="checkbox" name="study">
+                    Буду продолжать обучение
+                </label>
+                <br>
+                <label>
+                    <input  type="checkbox" name="learn_english">
+                    Дополнительно занимаюсь английским
+                </label>
+            </fieldset><br>
             <button type="submit">Отправить</button>
-
-
-
-        </div>
-
-
+        </form>
     </div>
 </body>
 
