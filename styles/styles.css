@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+    background-color: aqua;
+}
+.tittle{
+    font-size: 30px;
+    background-color: rgb(107, 105, 105);
+    color: rgb(213, 196, 230);
+    
+}
+
+
+.list__one {
+    background-color: aqua;
+    width: 81px;    
+    color: chocolate;
+}
+.list__two {
+    color: darkblue;
+}
+.list__three {
+    color: gold;
+}
+.list__four {
+    color: limegreen;
+
+}
+.list__five {
+    color: navy;
+
+}
+.list__six {
+    background-color: yellow;
+    width: 130px;
+    color: sienna;
+
+}
+
+
+
+.discription {
+    color: rgb(255, 251, 11);
+    background-color: cornflowerblue;
+}
+
+p {
+    color: rgb(165, 4, 29);
+    
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+
+}
+a:hover{
+    text-decoration: underline;
+    color: green;
+}
+span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(22, 5, 131);
+    text-decoration: underline;
+}
+
+#nameID {
+    border-width: 3px;
+}
+
+#nameID.input {
+    background-color: yellow;
+}
+
+.some__text.some__one__text {
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgba(10, 10, 10, 0.377);
+    text-align: center;
+    color: whitesmoke;
+}
+.btn {
+    background-color: black;
+    border: 2px solid yellow;
+    font-size: 35px;
+}
