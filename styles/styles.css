@@ -1,0 +1,35 @@
+body {
+    background-color: #E0E0E0;
+}
+
+.main__content {
+    max-width: 1200px;
+}
+
+.card__item {
+    max-width: 100%;
+}
+
+
+
+.card{
+    width: 200px;
+    height: 300px;
+    max-width: 33.3333%;
+    text-align: center;
+    float: left;
+}
+
+.card__img {
+    width: 130px;
+    height: 130px;
+}
+
+.card__title{
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
