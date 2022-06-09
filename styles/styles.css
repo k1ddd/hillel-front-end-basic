@@ -10,6 +10,7 @@ html {
     font-weight: 400;
     line-height: 1.7;
     font-style: normal;
+    background-color: #C4C4C4;
 }
 img{
     max-width: 100%;
@@ -21,5 +22,27 @@ a{
 }
 
 
+.block__1{
+    margin-bottom: 20px;
+    background-color: #E6E6E6;
+    height: 170px;
+    
+}
+.float__1{
+    float: right;
+}
 
+.photo {
+    width: 130px;
+    height: 100px;
+}
 
+.block__2{
+    margin-bottom: 20px;
+    background-color: #E6E6E6;
+    height: 170px;
+}
+.block__3 {
+    background-color: #E6E6E6;
+    height: 170px;
+}
