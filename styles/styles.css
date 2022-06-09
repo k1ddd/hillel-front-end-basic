@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #E0E0E0;
-}
+
 html {
     font-family: 'Roboto', sans-sserif;
     font-size: 16px;
@@ -15,7 +13,6 @@ html {
 }
 img{
     max-width: 100%;
-
 }
 
 a{
@@ -23,43 +20,6 @@ a{
     color: inherit;
 }
 
-.main__content {
-    max-width: 100%;
-}
 
 
-.card{
-    margin-right: 100px;
-    margin-left: 100px;    
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    float: left;
-}
 
-.card__img {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 10px;
-}
-
-.card__title{
-    font-family: 'Roboto';
-    margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    color: #000000;
-}
-
-.card__text {
-    width: 200px;
-    height: 54px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    color: #000000;
-}
