@@ -1,65 +1,175 @@
-* ::after, ::before {
+*, ::after, ::before, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #E0E0E0;
-}
+
 html {
-    font-family: 'Roboto', sans-sserif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
     font-style: normal;
 }
+
 img{
     max-width: 100%;
 
 }
 
-a{
+a {
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
 }
 
-.main__content {
-    max-width: 100%;
+a:hover {
+    text-decoration: underline;
+}
+.nav {
+    padding-top: 80px;
+    padding-bottom: 162px;
 }
 
-
-.card{
-    margin-right: 100px;
-    margin-left: 100px;    
-    width: 200px;
-    height: 300px;
-    text-align: center;
-    float: left;
+.container {
+    background-color: #EEEFF1;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 399px;
+    padding-right: 16px;
+    
+}
+.container__2 {
+    background-color: #FFFFFF;
+        width: 100%;
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
-.card__img {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 10px;
+/* NAV ===================================*/
+.nav__link {
+    width: 84px;
+    height: 16px;
+    top: 79px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #34547A;
+
+}
+.nav__link{
+    margin-right: 42px;
 }
 
-.card__title{
-    font-family: 'Roboto';
-    margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
+/* Title  ===================================*/
+
+.title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.64;
     color: #000000;
+    margin-bottom: 60px;
 }
+/* Text ===================================*/
 
-.card__text {
-    width: 200px;
-    height: 54px;
-    font-style: normal;
+.text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #727272;
+    max-width: 540px;
+    margin-bottom: 65px;
+}
+/* Button ===================================*/
+.btn {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    background-color: #34547A;
+    padding: 19px 41px 20px 41px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+    margin-bottom: 141px;
+    }
+/* About ========================== */
+
+.about {
+    background: #FFFFFF;
+}
+
+
+.about__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.18;
     text-align: center;
     color: #000000;
+    margin-top: 112px;
+    margin-bottom: 50px;
 }
+
+.about__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+/* Projects =========================== */
+
+.projects {
+    background-color: #34547A;
+    padding-top: 100px;
+    text-align: center;
+    
+    
+}
+
+.img__project { 
+    floast: left;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+
+
+.project__title {
+
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.19;
+    color: #FFFFFF;
+
+}
+
+.project__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
