@@ -64,7 +64,7 @@ a:hover {
     margin-right: 42px;
 }
 
-/* Title  ===================================*/
+/* Title  =================================== */
 
 .title {
     font-weight: 500;
@@ -73,7 +73,7 @@ a:hover {
     color: #000000;
     margin-bottom: 60px;
 }
-/* Text ===================================*/
+/* Text =================================== */
 
 .text {
     font-weight: 400;
@@ -83,6 +83,7 @@ a:hover {
     max-width: 540px;
     margin-bottom: 65px;
 }
+
 /* Button ===================================*/
 .btn {
     display: inline-block;
@@ -133,20 +134,24 @@ a:hover {
     background-color: #34547A;
     padding-top: 100px;
     text-align: center;
-    
-    
+    padding-bottom: 100px;
+
+}
+
+.projects__item {
+    display: inline-block;
+    margin-right: 70px;
 }
 
 .img__project { 
-    floast: left;
+    float: left;
     margin-right: 20px;
-    display: inline-block;
+    
 }
 
 
-
 .project__title {
-
+    float: right;
     font-weight: 500;
     font-size: 21px;
     line-height: 1.19;
@@ -155,6 +160,7 @@ a:hover {
 }
 
 .project__text {
+    margin-right: -35px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.62;
@@ -162,13 +168,78 @@ a:hover {
 
 }
 
+/* About Work ================================= */
+
+.about__work {
+    background-color: #EEEFF1;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.about__work__title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.18;
+    text-align: center;
+    color: #000000;
+
+}
+
+.about__work__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 57px;
+}
+
+.video {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+    max-height: 600px;
+    
+}
+/* Foter ===============================*/
 
 
+.container__3 {
+    background-color: #34547A;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 399px;
+    padding-right: 16px;
+}
 
 
+.name {
+    
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.19;
+    color: #FFFFFF;
+}
 
-
-
+.copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.61;
+    color: #FFFFFF;
+}
 
 
 
