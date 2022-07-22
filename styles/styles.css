@@ -205,14 +205,42 @@ a:hover {
   padding-right: 14px;
 }
 
-.lang__eng {
+/* ================================= */
+.form_radio_btn {
+  display: inline-block;
+}
+.form_radio_btn input[type="radio"] {
+  display: none;
+}
+.form_radio_btn input[type="radio"]:checked + label {
+  display: inline-block;
+  cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 5px 7px;
   background: #f0145a;
   color: #ffffff;
   font-weight: 700;
+  user-select: none;
 }
+
+/* Hover */
+.form_radio_btn label:hover {
+  border: 1px solid transparent;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px 7px;
+  background: #f5f5fa;
+  color: inherit;
+}
+
+
+.fb:hover svg path {
+  fill: #f0145a;
+}
+
+/* ==================================== */
 
 .menu__up > .lang:last-child {
   padding-right: 14px;
@@ -609,7 +637,7 @@ a:hover {
     display: block;
   }
 
-  .burger span {
+  .burger {
     display: none;
   }
 

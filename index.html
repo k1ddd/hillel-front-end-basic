@@ -13,7 +13,6 @@
 <body>
     <header class="header">
         <div class="container wide flex space__between">
-
             <div class="grid">
                 <div class="burger">
                     <span></span>
@@ -22,9 +21,20 @@
                 </div>
                 <div class="flex menu__up">
                     <div>
-                        <a class="lang__ua" href="#">УК</a>
-                        <a class="lang__ru" href="#">РУ</a>
-                        <a class="lang__eng" href="#">EN </a>
+                        <span class="form_radio_btn lang__ua">
+                            <input id="radio-1" type="radio" name="radio" value="1">
+                            <label for="radio-1">UA</label>
+                        </span>
+
+                        <span class="form_radio_btn lang__ru">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">RU</label>
+                        </span>
+
+                        <span class="form_radio_btn">
+                            <input id="radio-3" type="radio" name="radio" value="3" checked>
+                            <label for="radio-3">EN</label>
+                        </span>
                     </div>
                     <span class="dot first"><svg width="6" height="7" viewBox="0 0 6 7" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -33,8 +43,8 @@
                     </span>
 
                     <span class="adress"> Kyiv, Mechnikova str, 14/1 </span>
-                    <span class="dot"><svg width="6" height="7" viewBox="0 0 6 7" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <span class="dot">
+                        <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="3" cy="3.5" r="3" fill="#E6E6F0" />
                         </svg>
                     </span>
@@ -44,8 +54,15 @@
                     <span class="dot"><svg width="6" height="7" viewBox="0 0 6 7" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="3" cy="3.5" r="3" fill="#E6E6F0" />
-                        </svg></span><a class="fb" target="_blank" href="https://www.facebook.com/"><img
-                            src="./images/fb.svg" alt="facebook__logo"></a>
+                        </svg>
+                    </span>
+                    <a class="fb" target="_blank" href="https://www.facebook.com/"><svg width="24" height="25"
+                            viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="#B3B3BA" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="flex logo">
                     <img class="logo__img" src="./images/Logo.png" alt="hlegal">
@@ -225,8 +242,13 @@
 
 
                 <div class="email align__itemCenter flex">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./images/fb__blue.png"
-                            alt="facebook"></a>
+                    <a class="fb" href="https://www.facebook.com/" target="_blank"><svg width="38" height="38"
+                            viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                fill="#24A3FF" />
+                        </svg>
+                    </a>
                     <span class="dot__grey"><svg width="6" height="6" viewBox="0 0 6 6" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="3" cy="3" r="3" fill="#B3B3BA" />
