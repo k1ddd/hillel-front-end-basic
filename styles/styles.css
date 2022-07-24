@@ -241,10 +241,6 @@ a:hover {
   color: inherit;
 }
 
-.fb:hover svg path {
-  fill: #f0145a;
-}
-
 /* ==================================== */
 
 .menu__up > .lang:last-child {
@@ -422,11 +418,10 @@ a:hover {
   outline: none;
 }
 
-.fb__our__page:hover {
+.icon__andText:hover .our__page,
+.icon__andText:hover svg path {
   color: #f0145a;
-}
-.our__page:hover {
-  color: #f0145a;
+  fill: #f0145a;
 }
 
 /* Form ========================================================= */
