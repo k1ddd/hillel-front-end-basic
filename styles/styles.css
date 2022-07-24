@@ -62,6 +62,10 @@ a:hover {
   padding-bottom: 60px;
 }
 
+.padding__top__60 {
+  padding-top: 60px;
+}
+
 .gap__30 {
   gap: 30px;
 }
@@ -113,7 +117,7 @@ a:hover {
 /* Header */
 
 .header {
-  padding-bottom: 66px;
+  padding-bottom: 60px;
 }
 
 .logo {
@@ -383,6 +387,48 @@ a:hover {
   line-height: 1.25;
 }
 
+/* Contacts information ============================================ */
+
+.border__line {
+  border: 4px solid #e6e6f0;
+  width: 650px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.tel__center {
+  color: #46466e;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.42;
+}
+
+.email__center {
+  margin-top: 15px;
+  color: #24a3ff;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.42;
+}
+
+.our__page {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  margin-left: 10px;
+  outline: none;
+}
+
+.fb__our__page:hover {
+  color: #f0145a;
+}
+.our__page:hover {
+  color: #f0145a;
+}
+
 /* Form ========================================================= */
 
 .main__tittle {
@@ -397,9 +443,83 @@ a:hover {
   padding-bottom: 30px;
 }
 
+.tittle {
+  padding: 30px 0 15px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #b3b3ba;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .form {
   background-color: #f5f5fa;
   padding: 30px 30px;
+  border-radius: 12px;
+}
+
+.input,
+.textarea {
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #b3b3ba;
+}
+
+.input,
+.textarea {
+  padding: 15px 0 15px 15px;
+  width: 100%;
+}
+.number,
+.name {
+  margin-bottom: 15px;
+}
+
+.email__form {
+  margin-bottom: 30px;
+}
+
+input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border: 1px solid #24a3ff;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  line-height: 1.25;
+  font-style: normal;
+  border: transparent;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 0;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background: #0085ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
 }
 
 /* Footer ===================================*/

@@ -86,55 +86,61 @@
         </div>
     </header>
 
-    <div class="container wide flex space__between">
-        <div>   
+    <div class="container flex space__between padding__bottom__60">
+        <div class="">
             <p class="adress">
-                Kyiv, Mechnikova str, 14
+                Kyiv,
+                <br> Mechnikova str, 14
             </p>
-            <p class="tel">
-                0800 211 927
+            <hr class="border__line">
+            <a class="tel__center" href="tel:+0800211927">0800 211 927 </a>
+
+            <p class="email__center">
+                <a target="_blank" href="mailto:">contact@forstudy.space</a>
             </p>
-            <p class="email">
-                contact@forstudy.space
-            </p>
-            <a class="fb" href="https://www.facebook.com/" target="_blank"><svg width="38" height="38"
-                    viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
-                        fill="#24A3FF" />
-                </svg>
-                <span>
-                    Our page
-                </span>
-                <p>
-                    on facebook
-                </p>
+
+            <hr class="border__line">
+            <div class="flex  align__itemCenter">
+                <div><a class="fb fb__our__page " href="https://www.facebook.com/" target="_blank"><svg width="38"
+                            height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                fill="#24A3FF" />
+                        </svg>
+                </div>
+                <div class="our__page">
+                    Our page <br> on facebook
+                </div>
+            </div>
+
+
+
             </a>
         </div>
         <div>
             <form class="form" action="#" method="get">
                 <h1 class="main__tittle">
                     We would like to help you
-                </h1>   
-                <input type="text" placeholder="Name" name="Name">
+                </h1>
+                <input class="input name" type="text" placeholder="Name" name="Name" width="450" height="100%">
                 <div>
-                <textarea name="Message" placeholder="message"  cols="30" rows="10">
-                </textarea>
+                    <textarea class="textarea" placeholder="Messege" cols="30" rows="10"></textarea>
                 </div>
-                
+
                 <h2 class="tittle">
                     How to answer you?
                 </h2>
-                <input  type="tel" placeholder="Phone number" name="number">
+                <input class="input number" type="tel" placeholder="Phone number" name="number">
                 <div>
-                <input type="email" placeholder="Email" name="email">
-                    </div>
+                    <input class="input email__form" type="email" placeholder="Email" name="email">
+                </div>
+
+                <button class="btn">
+                    Send message
+                </button>
             </form>
         </div>
     </div>
-
-
-
     <div class="footer__wrapper">
         <div class="container wide">
             <footer class="footer flex ">
