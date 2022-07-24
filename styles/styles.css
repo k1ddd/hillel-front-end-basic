@@ -200,11 +200,6 @@ a:hover {
   display: block;
 }
 
-.lang__ua,
-.lang__ru {
-  padding-right: 14px;
-}
-
 /* ================================= */
 .form_radio_btn {
   display: inline-block;
@@ -224,17 +219,23 @@ a:hover {
   user-select: none;
 }
 
-/* Hover */
-.form_radio_btn label:hover {
+.form_radio_btn label {
   border: 1px solid transparent;
   display: inline-block;
   cursor: pointer;
   border-radius: 8px;
   padding: 5px 7px;
-  background: #f5f5fa;
   color: inherit;
 }
 
+/* Hover */
+.form_radio_btn label:hover {
+  border: 1px solid transparent;
+  display: inline-block;
+  cursor: pointer;
+  background: #f5f5fa;
+  color: inherit;
+}
 
 .fb:hover svg path {
   fill: #f0145a;
@@ -338,7 +339,7 @@ a:hover {
   font-weight: 700;
 }
 
-.team {
+.contact {
   color: #f0145a;
   text-decoration: underline;
   font-weight: 700;
@@ -382,56 +383,23 @@ a:hover {
   line-height: 1.25;
 }
 
-/* Main Tittle */
+/* Form ========================================================= */
 
 .main__tittle {
   font-weight: 700;
   font-size: 30px;
-  line-height: 1.21;
+  line-height: 1.23;
   width: 100%;
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(100deg, #f0145a, #ef8080);
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
-/* Card ========================================================= */
-.main__content {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.photo {
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.card {
-  max-width: 500px;
-}
-
-.card:hover .name {
-  color: #f0145a;
-}
-
-.card:hover svg path {
-  stroke: #f0145a;
-}
-
-.name {
-  color: #323264;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  margin-bottom: 5px;
-}
-
-.prof {
-  color: #b3b3ba;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.57;
+.form {
+  background-color: #f5f5fa;
+  padding: 30px 30px;
 }
 
 /* Footer ===================================*/
