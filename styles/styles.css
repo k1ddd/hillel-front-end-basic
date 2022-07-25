@@ -40,6 +40,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.flex__wrap {
+  flex-wrap: wrap;
+}
 
 .container {
   width: 100%;
@@ -387,9 +390,16 @@ a:hover {
 
 .border__line {
   border: 4px solid #e6e6f0;
-  width: 650px;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.left__block {
+  width: 100%;
+}
+
+.right__block {
+  width: 100%;
 }
 
 .tel__center {
@@ -418,8 +428,13 @@ a:hover {
   outline: none;
 }
 
+.icon__andText {
+  margin-bottom: 30px;
+}
+
 .icon__andText:hover .our__page,
-.icon__andText:hover svg path {
+.icon__andText:hover svg path,
+.fb:hover svg path {
   color: #f0145a;
   fill: #f0145a;
 }
@@ -528,6 +543,7 @@ input:focus,
   background-color: #f5f5fa;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 30px;
 }
 
 .adress.dark {
@@ -614,6 +630,10 @@ input:focus,
     gap: 30px;
   }
 
+  .right__block {
+    width: 100%;
+  }
+
   .grid {
     display: grid;
   }
@@ -632,6 +652,7 @@ input:focus,
 
   .footer__wrapper {
     padding-bottom: 0;
+    margin-top: 60px;
   }
 
   .email,
@@ -704,10 +725,8 @@ input:focus,
     justify-content: flex-start;
   }
 
-  .page__team {
-    color: #323264;
-    font-size: 36px;
-    line-height: 1.22;
+  .icon__andText {
+    margin-bottom: 60px;
   }
 
   .logo__img {
@@ -733,6 +752,10 @@ input:focus,
     padding-bottom: 0;
     background-color: unset;
     justify-content: unset;
+  }
+
+  .right__block {
+    width: 100%;
   }
 
   .menu__down {
@@ -770,7 +793,7 @@ input:focus,
     --container-space: 80px;
   }
   .container {
-    max-width: calc(768px + calc(1 * var(--container-space)));
+    max-width: calc(936px + calc(1 * var(--container-space)));
     margin-left: auto;
     margin-right: auto;
   }
@@ -788,8 +811,10 @@ input:focus,
     margin-top: 0;
   }
 
-  .logo {
-    align-self: center;
+  .central__wrapper {
+    flex-wrap: inherit;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 
   .grid {
@@ -807,6 +832,18 @@ input:focus,
 
   .main__tittle {
     font-size: 38px;
+  }
+
+  .left__block {
+    width: 43%;
+  }
+
+  .right__block {
+    width: 55%;
+  }
+
+  .icon__andText {
+    margin-bottom: 0;
   }
 
   .card {
@@ -831,10 +868,10 @@ input:focus,
 
 @media (min-width: 1200px) {
   :root {
-    --container-space: 80px;
+    --container-space: 140px;
   }
   .container {
-    max-width: calc(1080px + calc(2 * var(--container-space)));
+    max-width: calc(1200px + calc(2 * var(--container-space)));
   }
   .card {
     max-width: calc(33.333% - 40px);
@@ -845,7 +882,10 @@ input:focus,
 }
 
 @media (min-width: 1500px) {
+  :root {
+    --container-space: 140px;
+  }
   .container {
-    max-width: calc(1360px + calc(2 * var(--container-space)));
+    max-width: calc(1135px + calc(2 * var(--container-space)));
   }
 }
