@@ -301,6 +301,7 @@ a:hover {
 
 .menu__up {
   align-items: center;
+  margin-bottom: 16px;
   justify-content: flex-start;
 }
 
@@ -608,17 +609,9 @@ input:focus,
     display: block;
   }
 
-  .main__tittle {
-    font-size: 30px;
-  }
-
   .menu__down nav {
     height: 100%;
     justify-content: flex-start;
-  }
-
-  .main__tittle {
-    font-size: 38px;
   }
 
   .card {
@@ -668,10 +661,6 @@ input:focus,
   }
   .footer {
     justify-content: center;
-  }
-
-  .main__tittle {
-    font-size: 38px;
   }
 
   .logo {
@@ -827,10 +816,6 @@ input:focus,
 
   .menu__down nav {
     justify-content: flex-end;
-  }
-
-  .main__tittle {
-    font-size: 38px;
   }
 
   .left__block {
