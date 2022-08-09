@@ -16,12 +16,46 @@ h6 {
   box-sizing: border-box;
 }
 
+.gradient {
+  background-image: linear-gradient(228.57deg, #323264, #323264, #643e72);
+  border-radius: 0px 0px 12px 12px;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.gradient::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: -10px;
+  width: calc(100% - 40px);
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background: #cacadb;
+}
+.gradient::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 40px;
+  bottom: -20px;
+  width: calc(100% - 80px);
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background: #e7e7f2;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
   font-style: normal;
+}
+html {
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
 }
 
 img {
@@ -113,6 +147,10 @@ a:hover {
   flex-direction: row-reverse;
 }
 
+.flex__direction__column {
+  flex-direction: column;
+}
+
 .gap__14 {
   gap: 14px;
 }
@@ -121,6 +159,8 @@ a:hover {
 
 .header {
   padding-bottom: 60px;
+  position: absolute;
+  width: 100%;
 }
 
 .logo {
@@ -140,12 +180,13 @@ a:hover {
 }
 
 .burger {
+  color: white;
   width: 50px;
   height: 50px;
   position: absolute;
   top: 60px;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -156,7 +197,7 @@ a:hover {
   position: absolute;
   left: 5px;
   transition: all 0.3s linear;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .burger.active {
@@ -240,7 +281,7 @@ a:hover {
   border: 1px solid transparent;
   display: inline-block;
   cursor: pointer;
-  background: #f5f5fa;
+  background: #f5f7face;
   color: inherit;
 }
 
@@ -261,12 +302,13 @@ a:hover {
   inset: 0;
   background-color: #323264;
   padding: 1rem;
+  z-index: 1;
 }
 
 .menu__down nav {
   width: 100%;
   height: 57%;
-  background: white;
+  color: #ffffff;
   border-radius: 1rem;
   top: 100%;
   transition: all 0.3s linear;
@@ -279,11 +321,12 @@ a:hover {
 
 .menu__down.open nav {
   top: initial;
+  color: #24a3ff;
 }
 
 .menu__up {
   font-style: normal;
-  color: #b3b3ba;
+  color: #ffffff;
   font-size: 12px;
   line-height: 1.25;
 }
@@ -312,7 +355,7 @@ a:hover {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #f5f5fa;
+  background-color: #f5f5fa33;
   justify-content: space-between;
 }
 
@@ -337,14 +380,10 @@ a:hover {
 }
 
 .nav > a:hover {
-  color: #f0145a;
-  text-decoration: underline;
   font-weight: 700;
 }
 
 .contact {
-  color: #f0145a;
-  text-decoration: underline;
   font-weight: 700;
 }
 
@@ -368,8 +407,8 @@ a:hover {
 }
 
 .adress {
-  font-style: normal;
-  color: #b3b3ba;
+  font-weight: 400;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.25;
 }
@@ -381,7 +420,7 @@ a:hover {
 .tel {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #b3b3ba;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.25;
 }
@@ -392,6 +431,18 @@ a:hover {
   border: 4px solid #e6e6f0;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.tabs__link.navs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tabs__link.navsL::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+.tabs__link.navs::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(247, 243, 243, 0.733);
 }
 
 .left__block {
@@ -439,100 +490,428 @@ a:hover {
   fill: #f0145a;
 }
 
-/* Form ========================================================= */
+/* First screen  ========================================================= */
 
-.main__tittle {
+.first__screen {
+  min-height: 89vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url("../images/h.png") no-repeat center/contain;
+  margin-bottom: 60px;
+  background-size: cover;
+}
+
+.main_title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.21;
+  color: #ffffff;
+  text-align: center;
+}
+
+.scroll {
+  position: relative;
+  bottom: 0;
+  top: 183px;
+  left: 48%;
+  right: 0;
+}
+
+/* Tabs ============================================= */
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navLink {
   font-weight: 700;
   font-size: 30px;
-  line-height: 1.23;
-  width: 100%;
+  line-height: 1.21;
+  padding: 0;
+  -webkit-background-clip: text;
+  color: #b3b3ba;
+  background-clip: text;
+  cursor: pointer;
+  border: none;
+  width: 300px;
+  background-color: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  white-space: nowrap;
+  text-align: left;
+  gap: 30px;
+}
+
+.align-items-center {
+  align-items: stretch !important ;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.navLink.active {
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(100deg, #f0145a, #ef8080);
-  padding-bottom: 30px;
 }
 
-.tittle {
-  padding: 30px 0 15px 0;
-  font-style: normal;
+.navLink:hover {
+  color: #f0145a;
+}
+
+.title__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.paragraph__text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.57;
+  color: #ffffff;
+}
+.tabs__link.navs {
+  border-right: transparent;
+  padding-right: 0;
+  margin-right: 0;
+  padding-bottom: 30px;
+  gap: 30px;
+  flex-direction: row !important;
+  overflow-x: auto;
+  text-align: start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-right: -60px;
+}
+
+.tab-pane {
+  display: none;
+  justify-content: center;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tabs__link {
+  flex-direction: column;
+}
+
+/* SERVICE ===================================================== */
+.services_ {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.21;
-  color: #b3b3ba;
-  letter-spacing: 1px;
+  color: #24a3ff;
   text-transform: uppercase;
 }
 
-.form {
-  background-color: #f5f5fa;
-  padding: 30px 30px;
-  border-radius: 12px;
+.services_:hover,
+.services_block:hover svg path {
+  color: #f0145a;
+  stroke: #f0145a;
+  color: #f0145a;
+  text-decoration: none;
 }
 
-.input,
-.textarea {
-  border: 1px solid transparent;
-  border-radius: 8px;
+.blue__arrow {
+  padding-left: 2px;
+  width: 12px;
+  height: 12px;
+  align-self: center;
+  cursor: pointer;
 }
 
-.input::placeholder,
-.textarea::placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
+.services_block:hover svg path {
+  color: #f0145a;
+  stroke: #f0145a;
+}
+
+.services_block {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.services_block_team {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.services_block_publications {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.title_another__text {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(100deg, #f0145a, #ef8080);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.23;
+  padding-bottom: 60px;
+}
+
+/* ICONS ===================== */
+
+.icon__block {
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 100%;
+}
+
+.icon__title {
+  color: #24a3ff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.22;
+  padding-top: 30px;
+}
+
+.icon__text {
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  color: #b3b3ba;
+  padding-top: 15px;
 }
 
-.input,
-.textarea {
-  padding: 15px 0 15px 15px;
+/* TEAM==========================================>>> */
+
+.aTeam {
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.team__block {
   width: 100%;
 }
-.number,
+
+.photo__team > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* SLIDER =======================>>>> */
+
+#mySlider {
+  padding-top: 80px;
+}
+
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  background-color: #24a3ff;
+  opacity: 20%;
+  border-radius: 50%;
+}
+.slick-dots {
+  bottom: -51px;
+}
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-dots li.slick-active button {
+  opacity: 100%;
+}
+
+.photo__team {
+  margin-right: 30px;
+  width: 400px;
+  min-width: 315px;
+}
+
+.our__motto {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(100deg, #f0145a, #ef8080);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.21;
+  padding-bottom: 30px;
+}
+
 .name {
+  color: #b3b3ba;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.prof {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+/* Company===========================>>>>>>>>>>>> */
+
+.trust {
+  color: #323264;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.company__block {
+  flex-wrap: wrap;
+}
+
+.hilel,
+.wannaBiz,
+.tapgerine,
+.dLook,
+.orangear,
+.adtelligent,
+.Clickky,
+.ecoLeasing,
+.infaTek,
+.sityPark,
+.artPrintStudio,
+.ultimateCard {
+  width: 100%;
+  display: flex;
+  max-width: 430px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Clickky,
+.ecoLeasing,
+.infaTek,
+.sityPark,
+.artPrintStudio,
+.ultimateCard {
+  display: none;
+}
+
+.hilel {
+  background-color: #1c4280;
+}
+.wannaBiz {
+  background-color: #143646;
+}
+
+.tapgerine {
+  background-color: #f48b30;
+}
+.dLook {
+  background-color: #9e4dc3;
+}
+.orangear {
+  background-color: #fd9339;
+}
+.adtelligent {
+  background-color: #e2e2e4;
+}
+.Clickky {
+  background-color: #c71c36;
+}
+.ecoLeasing {
+  background-color: #dcf3f9;
+}
+
+.infaTek {
+  background-color: #eaeaea;
+}
+.sityPark {
+  background-color: #282240;
+}
+.artPrintStudio {
+  background-color: #1d4568;
+}
+.ultimateCard {
+  background-color: #000000;
+}
+
+/* Publications ================================ */
+
+.our__motto.down {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.publications__block {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.publications__card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 430px;
+}
+
+.publications__title {
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #24a3ff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.publications__date {
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #b3b3ba;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.publications__text {
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.line__publications {
+  border: 4px solid #e6e6f0;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.email__form {
+/* Footer ===================================*/
+
+.footerLine {
+  border: 2px solid #e6e6f0;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
-
-input:focus,
-.textarea:focus {
-  outline: none;
-}
-
-.input:focus,
-.textarea:focus {
-  border: 1px solid #24a3ff;
-}
-
-.btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  width: 100%;
-  cursor: pointer;
-  line-height: 1.25;
-  font-style: normal;
-  border: transparent;
-  background: #24a3ff;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-  padding: 18px 0;
-  color: #ffffff;
-}
-
-.btn:hover {
-  background: #0085ff;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-}
-
-/* Footer ===================================*/
 
 .footer {
   flex-wrap: wrap;
@@ -541,9 +920,7 @@ input:focus,
 
 .footer__wrapper {
   background-color: #f5f5fa;
-  padding-top: 30px;
   padding-bottom: 30px;
-  margin-top: 30px;
 }
 
 .adress.dark {
@@ -594,7 +971,7 @@ input:focus,
   gap: 10px;
 }
 
-/* Media =================================== */
+/* Media ========================================================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: 576px) {
   :root {
@@ -603,6 +980,16 @@ input:focus,
 
   .header .tel {
     margin-left: 0;
+  }
+
+  .adress {
+    color: #b3b3ba;
+  }
+
+  .first__screen {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
   }
 
   .dot {
@@ -618,8 +1005,30 @@ input:focus,
     max-width: calc(50% - 15px);
   }
 
+  .navLink {
+    font-size: 38px;
+    line-height: 1.21;
+    width: 100%;
+  }
+
+  .services_block {
+    padding-top: 60px;
+  }
+
   .main__content {
     gap: 30px;
+  }
+
+  .title__text {
+    padding-top: 60px;
+  }
+
+  .tabs__link.navs {
+    padding-bottom: 60px;
+  }
+
+  .scroll {
+    top: 269px;
   }
 
   .right__block {
@@ -642,9 +1051,23 @@ input:focus,
     margin-bottom: 30px;
   }
 
+  .publications__card:nth-child(1) {
+    width: calc(50% - 15px);
+  }
+  .publications__card:nth-child(2) {
+    width: calc(50% - 15px);
+  }
+  .publications__card:nth-child(3) {
+    width: 100%;
+  }
+
+  .title_another__text {
+    font-size: 30px;
+    line-height: 1.21;
+  }
+
   .footer__wrapper {
     padding-bottom: 0;
-    margin-top: 60px;
   }
 
   .email,
@@ -674,6 +1097,19 @@ input:focus,
     position: relative;
     bottom: 6px;
     width: 29px;
+  }
+
+  .title__text {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .first__screen {
+    background-size: cover;
+  }
+
+  .icon {
+    width: calc(50% - 30px);
   }
 
   .nav {
@@ -731,6 +1167,10 @@ input:focus,
     display: none;
   }
 
+  .photo__team {
+    min-width: 648px;
+  }
+
   .menu__up {
     margin-left: 0;
     margin-right: 0;
@@ -761,6 +1201,26 @@ input:focus,
     justify-content: flex-start;
   }
 
+  .hilel,
+  .wannaBiz,
+  .tapgerine,
+  .dLook,
+  .orangear,
+  .adtelligent,
+  .Clickky,
+  .ecoLeasing,
+  .infaTek,
+  .sityPark,
+  .artPrintStudio,
+  .ultimateCard {
+    width: 33.333%;
+    display: flex;
+    max-width: 430px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .nav {
     text-align: left;
     margin-top: 30px;
@@ -769,6 +1229,12 @@ input:focus,
   .email,
   .adress__and__map {
     gap: 0;
+  }
+
+  .public__photo {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
   }
 
   .dot__grey {
@@ -786,8 +1252,67 @@ input:focus,
     margin-right: auto;
   }
 
-  .footer {
-    justify-content: space-between;
+  .first__screen {
+    min-height: 100vh;
+    background-size: contain;
+  }
+
+  .adress {
+    color: #ffffff;
+  }
+
+  .title__text {
+    padding-top: 0;
+  }
+
+  .aTeam {
+    display: flex !important;
+    flex-wrap: nowrap;
+  }
+
+  .icon {
+    width: calc(33.33% - 40px);
+  }
+
+  .tabs__link.navs {
+    padding-bottom: 0px;
+  }
+
+  .services_block {
+    padding-top: 70px;
+  }
+
+  .photo__team {
+    min-width: 400px;
+  }
+
+  .navLink {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.21;
+    padding: 15px;
+    text-align: end;
+    gap: 0;
+    width: 100%;
+  }
+
+  .align-items-center {
+    align-items: center !important ;
+    justify-content: end;
+    flex-direction: unset;
+  }
+
+  .tabs__link.navs {
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    padding-right: 60px;
+    margin-right: 60px;
+    gap: 0;
+    flex-direction: column !important;
+    overflow-x: unset;
+    text-align: unset;
+    justify-content: unset;
+    display: flex;
   }
 
   .menu__up {
@@ -797,6 +1322,26 @@ input:focus,
   .nav {
     text-align: right;
     margin-top: 0;
+  }
+
+  .hilel,
+  .wannaBiz,
+  .tapgerine,
+  .dLook,
+  .orangear,
+  .adtelligent,
+  .Clickky,
+  .ecoLeasing,
+  .infaTek,
+  .sityPark,
+  .artPrintStudio,
+  .ultimateCard {
+    width: 25%;
+    display: flex;
+    max-width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
   }
 
   .central__wrapper {
@@ -845,6 +1390,29 @@ input:focus,
     width: initial;
   }
 
+  .footer {
+    justify-content: space-between;
+  }
+
+  .publications__card:nth-child(1) {
+    width: calc(33.33% - 20px);
+  }
+  .publications__card:nth-child(2) {
+    width: calc(33.33% - 20px);
+  }
+  .publications__card:nth-child(3) {
+    width: calc(33.33% - 20px);
+  }
+
+  .publications__block {
+    flex-wrap: nowrap;
+  }
+
+  .public__photo {
+    object-fit: cover;
+    height: auto;
+  }
+
   .copirygth {
     order: initial;
   }
@@ -871,5 +1439,15 @@ input:focus,
   }
   .container {
     max-width: calc(1135px + calc(2 * var(--container-space)));
+  }
+
+  .scroll {
+    top: 320px;
+  }
+
+  .company__block {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 60px;
   }
 }
