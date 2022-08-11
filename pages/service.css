@@ -1170,7 +1170,10 @@ a:hover {
     margin-right: 0;
   }
 
-  
+  .services {
+    color: #f0145a;
+    text-decoration: underline;
+  }
 
   .about__us,
   .services,
