@@ -254,7 +254,7 @@ a:hover {
 }
 
 .first__screen__wrapper {
-  padding-top: 185px;
+  padding-top: 90px;
 }
 
 .fb {
@@ -632,7 +632,9 @@ a:hover {
 }
 
 .services_:hover,
-.services_block:hover svg path {
+.services_block_team:hover,
+.services_block:hover svg path,
+.services_block_team:hover svg path {
   color: #f0145a;
   stroke: #f0145a;
   color: #f0145a;
@@ -642,14 +644,9 @@ a:hover {
 .blue__arrow {
   padding-left: 2px;
   width: 12px;
-  height: 12px;
+  height: 11px;
   align-self: center;
   cursor: pointer;
-}
-
-.services_block:hover svg path {
-  color: #f0145a;
-  stroke: #f0145a;
 }
 
 .services_block {
@@ -892,7 +889,7 @@ a:hover {
 
 .publications__card {
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 12px;
   width: 100%;
   min-height: 430px;
 }
@@ -1034,6 +1031,10 @@ a:hover {
     max-width: calc(50% - 15px);
   }
 
+  .publications__card {
+    min-height: 514px;
+  }
+
   .navLink {
     font-size: 38px;
     line-height: 1.21;
@@ -1129,7 +1130,7 @@ a:hover {
   }
 
   .first__screen__wrapper {
-    padding-top: 300px;
+    padding-top: 150px;
   }
 
   .title__text {
@@ -1138,7 +1139,7 @@ a:hover {
   }
 
   .first__screen {
-    background-size: cover;
+    background-size: contain;
   }
 
   .icon {
@@ -1169,8 +1170,6 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
   }
-
-  
 
   .about__us,
   .services,
@@ -1297,7 +1296,7 @@ a:hover {
   }
 
   .first__screen__wrapper {
-    padding-top: 185px;
+    padding-top: 90px;
   }
 
   .title__text {
@@ -1433,6 +1432,10 @@ a:hover {
     justify-content: space-between;
   }
 
+  .publications__card {
+    min-height: 450px;
+  }
+
   .publications__card:nth-child(1) {
     width: calc(33.33% - 20px);
   }
@@ -1488,5 +1491,18 @@ a:hover {
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 60px;
+  }
+
+  .hilel {
+    border-top-left-radius: 12px;
+  }
+  .dLook {
+    border-top-right-radius: 12px;
+  }
+  .infaTek {
+    border-bottom-left-radius: 12px;
+  }
+  .ultimateCard {
+    border-bottom-right-radius: 12px;
   }
 }

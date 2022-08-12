@@ -175,7 +175,7 @@ a:hover {
   padding-left: 4px;
   padding-right: 4px;
   position: relative;
-  bottom: 5px;
+  bottom: 9px;
   width: 18px;
 }
 
@@ -241,9 +241,9 @@ a:hover {
 
 .page__services {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 1.22;
+  line-height: 1.2;
   position: relative;
   top: -5px;
   order: 1;
@@ -254,7 +254,11 @@ a:hover {
 }
 
 .first__screen__wrapper {
-  padding-top: 185px;
+  padding-top: 90px;
+}
+
+.title_another__text {
+  padding-top: 90px;
 }
 
 .fb {
@@ -1128,8 +1132,17 @@ a:hover {
     width: 29px;
   }
 
+  .page__services {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+
   .first__screen__wrapper {
-    padding-top: 300px;
+    padding-top: 150px;
+  }
+
+  .title_another__text {
+    padding-top: 150px;
   }
 
   .title__text {
@@ -1300,7 +1313,11 @@ a:hover {
   }
 
   .first__screen__wrapper {
-    padding-top: 185px;
+    padding-top: 100px;
+  }
+
+  .title_another__text {
+    padding-top: 100px;
   }
 
   .title__text {
@@ -1491,5 +1508,18 @@ a:hover {
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 60px;
+  }
+
+  .hilel {
+    border-top-left-radius: 12px;
+  }
+  .dLook {
+    border-top-right-radius: 12px;
+  }
+  .infaTek {
+    border-bottom-left-radius: 12px;
+  }
+  .ultimateCard {
+    border-bottom-right-radius: 12px;
   }
 }
