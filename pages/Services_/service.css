@@ -626,6 +626,28 @@ a:hover {
   flex-direction: column;
 }
 
+/* BUTTON ===============================================> */
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  line-height: 1.25;
+  font-style: normal;
+  border: transparent;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 0;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background: #0085ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+}
 /* SERVICE ===================================================== */
 .services_ {
   font-weight: 700;
