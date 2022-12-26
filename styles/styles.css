@@ -1265,6 +1265,11 @@ a:hover {
     gap: 0;
   }
 
+  .offers__main__block {
+    flex-wrap: nowrap !important;
+    gap: 60px !important;
+  }
+
   .public__photo {
     object-fit: cover;
     width: 100%;

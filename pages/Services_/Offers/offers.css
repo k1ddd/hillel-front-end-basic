@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+.offers__main__block {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
 .offers__title {
   font-weight: 700;
   font-size: 30px;
@@ -74,11 +80,9 @@
   font-size: 18px;
   line-height: 1.44;
   color: #ffff;
+  align-items: center;
 }
 
-.offers__first__block {
-  margin-right: 60px;
-}
 .offers__first__block > li,
 .offers__second__block > li {
   margin-bottom: 15px;

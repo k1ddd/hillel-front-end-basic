@@ -1255,6 +1255,11 @@ a:hover {
     justify-content: unset;
   }
 
+  .offers__main__block {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
   .right__block {
     width: 100%;
   }
@@ -1433,6 +1438,11 @@ a:hover {
 
   .grid {
     display: grid;
+  }
+
+  .offers__main__block {
+    flex-wrap: nowrap;
+    gap: 0;
   }
 
   .email,
