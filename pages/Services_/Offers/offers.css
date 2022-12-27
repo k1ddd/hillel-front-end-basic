@@ -74,23 +74,34 @@
 
 /* Offers main text ================================== */
 
-.offers__first__block,
+/* .offers__first__block,
 .offers__second__block {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.44;
   color: #ffff;
   align-items: center;
+} */
+
+.block__offers {
+  columns: 1;
+  gap: 60px;
 }
 
-.offers__first__block > li,
-.offers__second__block > li {
+li {
   margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #ffff;
+  align-items: center;
 }
-.offers__first__block > li:last-child,
-.offers__second__block > li:last-child {
+li:last-child {
   margin-bottom: 0px;
 }
 li::marker {
   color: #f0145a;
 }
+
+
+/*  Modal Window =========================================================================== */

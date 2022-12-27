@@ -1265,9 +1265,9 @@ a:hover {
     gap: 0;
   }
 
-  .offers__main__block {
-    flex-wrap: nowrap !important;
-    gap: 60px !important;
+  .block__offers {
+    columns: 2 !important;
+    gap: 60px;
   }
 
   .public__photo {
