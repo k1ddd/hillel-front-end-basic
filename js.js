@@ -3,7 +3,7 @@ $(".burger").click(function () {
   $(".menu__down").toggleClass("open");
 });
 
-$("#mySlider").slick({
+$(".mySlider").slick({
   dots: true,
 });
 

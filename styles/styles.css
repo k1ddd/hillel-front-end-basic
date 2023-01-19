@@ -736,7 +736,7 @@ a:hover {
 }
 /* SLIDER =======================>>>> */
 
-#mySlider {
+.mySlider {
   padding-top: 80px;
 }
 
@@ -798,7 +798,7 @@ a:hover {
   font-size: 14px;
   line-height: 1.21;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 90px;
   padding-bottom: 30px;
   text-align: center;
 }
