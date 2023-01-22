@@ -11,7 +11,6 @@ $("#mySlider").slick({
       settings: {
         slidesToShow: 4,
         slidesToScroll: 4,
-
       },
     },
     {
@@ -25,4 +24,14 @@ $("#mySlider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
+});
+
+$(".burger").click(function () {
+  $(this).toggleClass("active");
+  $(".menu__down").toggleClass("open");
+});
+$(document).ready(function () {
+  $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
+    $(this).toggleClass("open");
+  });
 });

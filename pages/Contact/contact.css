@@ -336,6 +336,58 @@ a:hover {
   line-height: 1.25;
 }
 
+/* Burger =============================================================================================== */
+.burger {
+  color: black !important;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.burger span {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  left: 5px;
+  transition: all 0.3s linear;
+  background-color: black;
+}
+
+.burger.active {
+  position: fixed;
+  top: 9px;
+  right: 10px;
+}
+
+.burger span:first-child {
+  top: 10px;
+}
+
+.burger span:last-child {
+  top: 20px;
+}
+
+.active.burger span:nth-child(1) {
+  top: 25px;
+  transform: rotate(45deg);
+  background-color: #ec6f5d;
+}
+
+.active.burger span:nth-child(3) {
+  opacity: 0;
+}
+
+.active.burger span:nth-child(2) {
+  top: 25px;
+  transform: rotate(-45deg);
+  background-color: #ec6f5d;
+}
+
 /* Contacts information ============================================ */
 
 .border__line {
@@ -638,6 +690,10 @@ input:focus,
     gap: 0;
     margin-bottom: 0;
     justify-content: unset;
+  }
+
+  .burger {
+    display: none;
   }
 
   .about__us,
