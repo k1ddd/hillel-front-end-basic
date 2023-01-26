@@ -153,16 +153,14 @@
 }
 
 .main__team__text {
+  position: absolute;
   font-size: 36px;
   opacity: 83%;
   line-height: 1.22;
   letter-spacing: 13px;
   font-weight: bold;
   color: #ffffff;
-  position: absolute;
-  top: 187%;
-  left: 77%;
-  transform: translate(-110%, -71%);
+  transform: translate(71%, 85%);
 }
 
 .par__about {
@@ -560,13 +558,12 @@
   .main__team__text {
     font-size: 46px;
     letter-spacing: 63px;
-    top: 191%;
-    left: 84%;
+    transform: translate(55%, 150%);
   }
 
   .slick-slide img {
-    width: 153px;
-    height: 70px;
+    width: 150px;
+    height: 80px;
     margin-left: 8px;
     border-radius: 12px;
   }
@@ -638,20 +635,14 @@
 
   .main__tittle {
     font-size: 38px;
+    padding-bottom: 28px !important;
   }
 
   .main__team__text {
     font-size: 86px;
     letter-spacing: 63px;
     line-height: 1.21;
-    top: 105%;
-    left: 83%;
-  }
-
-  .slick-slide img {
-    width: 255px;
-    margin-left: 8px;
-    border-radius: 12px;
+    transform: translate(57%, 100%);
   }
 
   .first__and__second__block {
@@ -673,7 +664,12 @@
 
   .slick-slide img {
     width: 196px;
-    padding-left: 40px;
+    height: 110px;
+    border-radius: 12px;
+  }
+
+  .border__line {
+    margin-top: 50px;
   }
 
   .adress,
@@ -705,10 +701,62 @@
   .main__content {
     gap: 60px;
   }
+
+  .first__and__second__block {
+    padding: 0 100px;
+  }
+  .block__stat {
+    min-width: 38%;
+  }
+
+  .common__block {
+    padding: 0 100px;
+    margin-right: 0px;
+    gap: 60px;
+  }
+
+  .rightBlock {
+    min-width: 34%;
+    margin-right: 0px;
+  }
+
+  .main__team__text {
+    font-size: 96px;
+    transform: translate(90%, 149%);
+  }
+
+  .slick-slide img {
+    width: 300px;
+    height: 110px;
+  }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1601px) {
   .container {
     max-width: calc(1360px + calc(2 * var(--container-space)));
+  }
+
+  .main__tittle {
+    padding-bottom: 28px;
+  }
+
+  .first__and__second__block {
+    padding: 0 70px;
+  }
+  .rightBlock {
+    min-width: 27%;
+  }
+
+  .main__team__text {
+    transform: translate(135%, 200%);
+  }
+  .block__stat {
+    min-width: 31%;
+  }
+  .common__block {
+    padding: 0 70px;
+  }
+  .slick-slide img {
+    width: 320px;
   }
 }

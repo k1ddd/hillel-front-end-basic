@@ -434,6 +434,82 @@ a:hover {
   font-size: 14px;
   line-height: 1.57;
 }
+.email_team {
+  color: #24a3ff;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.email_team:hover {
+  color: #f0145a;
+  text-decoration: underline;
+}
+
+.name__team {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.21;
+  width: 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(100deg, #f0145a, #ef8080);
+}
+
+.prof__team {
+  color: #b3b3ba;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.border__line {
+  border: 2px solid #e6e6f0;
+  background-color: #e6e6f0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.par__team {
+  margin-bottom: 30px;
+}
+.education__and__exeperience {
+  color: #323264;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 1.21;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-top: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 400;
+}
+
+.img__team {
+  min-width: 315px;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.team__info {
+  margin-left: 0;
+}
+
+.main__team__info {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Footer ===================================*/
 
