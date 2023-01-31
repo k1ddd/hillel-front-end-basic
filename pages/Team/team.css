@@ -450,7 +450,7 @@ a:hover {
   margin-top: 30px;
   margin-bottom: 15px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 38px;
   line-height: 1.21;
   width: 100%;
   -webkit-background-clip: text;
@@ -509,6 +509,22 @@ p {
 .main__team__info {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.img__and__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name__and__social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.dot__main {
+  display: none;
 }
 
 /* Footer ===================================*/
@@ -616,6 +632,11 @@ p {
     display: block;
   }
 
+  .img__team {
+    width: 300px;
+    height: 375px;
+  }
+
   .footer {
     justify-content: center;
   }
@@ -704,6 +725,10 @@ p {
     line-height: 1.22;
   }
 
+  .dot__main {
+    display: none;
+  }
+
   .logo__img {
     width: unset;
   }
@@ -757,6 +782,14 @@ p {
   .dot__grey {
     display: block;
   }
+
+  .name__team {
+    margin-top: 0;
+  }
+
+  .name__and__social {
+    margin-left: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -786,6 +819,10 @@ p {
     align-self: center;
   }
 
+  .dot__main {
+    display: none !important;
+  }
+
   .grid {
     display: grid;
   }
@@ -805,6 +842,18 @@ p {
 
   .card {
     max-width: calc(33.333% - 20px);
+  }
+
+  .name__and__social {
+    margin-left: 0;
+  }
+
+  .img__and__info {
+    flex-wrap: nowrap;
+  }
+
+  .joint__block {
+    margin-left: 60px;
   }
 
   .adress,
