@@ -313,7 +313,7 @@ a:hover {
   justify-content: space-between;
 }
 
-.grid {
+.main__wrapper {
   width: 100%;
   display: block;
   grid-template-columns: repeat(3, 1fr);
@@ -649,7 +649,7 @@ p {
     grid-template-columns: 1fr;
 }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 
@@ -786,7 +786,7 @@ p {
     padding: 0;
   }
 
-  .grid {
+  .grmain__wrapperid {
     display: block;
   }
 
@@ -860,7 +860,7 @@ p {
     display: none !important;
   }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 

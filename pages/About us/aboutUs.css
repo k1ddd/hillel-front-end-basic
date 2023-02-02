@@ -370,7 +370,7 @@
     gap: 30px;
   }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 
@@ -525,7 +525,7 @@
     padding: 0;
   }
 
-  .grid {
+  .main__wrapper {
     display: block;
   }
 
@@ -608,7 +608,7 @@
     align-self: center;
   }
 
-  .grid {
+ .main__wrapper{
     display: grid;
   }
 

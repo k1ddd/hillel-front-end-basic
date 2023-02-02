@@ -266,7 +266,7 @@ a:hover {
   justify-content: space-between;
 }
 
-.grid {
+.main__wrapper {
   width: 100%;
   display: block;
   grid-template-columns: repeat(3, 1fr);
@@ -629,7 +629,7 @@ input:focus,
     width: 100%;
   }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 
@@ -760,7 +760,7 @@ input:focus,
     padding: 0;
   }
 
-  .grid {
+  .main__wrapper {
     display: block;
   }
 
@@ -812,7 +812,7 @@ input:focus,
     padding-bottom: 0;
   }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 

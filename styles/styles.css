@@ -373,7 +373,7 @@ a:hover {
   justify-content: space-between;
 }
 
-.grid {
+.main__wrapper {
   width: 100%;
   display: block;
   grid-template-columns: repeat(3, 1fr);
@@ -1065,7 +1065,7 @@ a:hover {
     width: 100%;
   }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 
@@ -1227,7 +1227,7 @@ a:hover {
     padding: 0;
   }
 
-  .grid {
+  .main__wrapper {
     display: block;
   }
 
@@ -1393,7 +1393,7 @@ a:hover {
     padding-bottom: 0;
   }
 
-  .grid {
+  .main__wrapper {
     display: grid;
   }
 
