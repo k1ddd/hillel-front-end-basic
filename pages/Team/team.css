@@ -513,9 +513,26 @@ p {
 }
 
 .img__and__info {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "photo__team__main"
+    "name__and__social"
+    "team__info";
+    grid-template-columns: 1fr;
 }
+
+.photo__team__main {
+  grid-area: photo__team__main;
+}
+
+.name__and__social {
+  grid-area: name__and__social;
+}
+.team__info {
+  grid-area: team__info;
+}
+
+
 
 .name__and__social {
   display: flex;
@@ -623,6 +640,14 @@ p {
   .main__content {
     gap: 30px;
   }
+
+    .img__and__info {
+  grid-template-areas:
+    "photo__team__main"
+    "name__and__social"
+    "team__info";
+    grid-template-columns: 1fr;
+}
 
   .grid {
     display: grid;
@@ -783,6 +808,9 @@ p {
     display: block;
   }
 
+
+
+
   .name__team {
     margin-top: 0;
   }
@@ -818,6 +846,15 @@ p {
   .logo {
     align-self: center;
   }
+  .img__and__info {
+    display: grid;
+     grid-template-areas:
+    "photo__team__main name__and__social"
+    "photo__team__main team__info";
+}
+  }
+   
+
 
   .dot__main {
     display: none !important;
@@ -848,9 +885,7 @@ p {
     margin-left: 0;
   }
 
-  .img__and__info {
-    flex-wrap: nowrap;
-  }
+
 
   .joint__block {
     margin-left: 60px;
