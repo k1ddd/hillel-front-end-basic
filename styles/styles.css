@@ -155,7 +155,7 @@ a:hover {
   gap: 14px;
 }
 
-/* Header */
+/* Header ============================================== */
 
 .header {
   padding-bottom: 60px;
@@ -188,6 +188,10 @@ a:hover {
   right: 0;
   z-index: 2;
   cursor: pointer;
+}
+
+.main__wrapper {
+  width: 100%;
 }
 
 .burger span {
@@ -321,7 +325,7 @@ a:hover {
 
 .menu__down nav {
   width: 100%;
-  height: 57%;
+  height: 60%;
   color: #ffffff;
   border-radius: 1rem;
   top: 100%;
@@ -373,7 +377,7 @@ a:hover {
   justify-content: space-between;
 }
 
-.main__wrapper {
+. {
   width: 100%;
   display: block;
   grid-template-columns: repeat(3, 1fr);
@@ -1180,7 +1184,7 @@ a:hover {
 
   .menu__down nav {
     height: 100%;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .icon__andText {
@@ -1364,7 +1368,7 @@ a:hover {
 
   .nav {
     text-align: right;
-    margin-top: 0;
+    margin-top: -16px;
   }
 
   .hilel,
