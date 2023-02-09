@@ -377,7 +377,7 @@ a:hover {
   justify-content: space-between;
 }
 
-. {
+.main__wrapper {
   width: 100%;
   display: block;
   grid-template-columns: repeat(3, 1fr);
@@ -921,7 +921,6 @@ a:hover {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
-  margin-bottom: 30px;
 }
 
 .line__publications {
