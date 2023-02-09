@@ -202,11 +202,6 @@ a:hover {
   display: block;
 }
 
-.lang__ua,
-.lang__ru {
-  padding-right: 14px;
-}
-
 /* ================================= */
 .form_radio_btn {
   display: inline-block;
@@ -226,13 +221,20 @@ a:hover {
   user-select: none;
 }
 
-/* Hover */
-.form_radio_btn label:hover {
+.form_radio_btn label {
   border: 1px solid transparent;
   display: inline-block;
   cursor: pointer;
   border-radius: 8px;
   padding: 5px 7px;
+  color: inherit;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+  border: 1px solid transparent;
+  display: inline-block;
+  cursor: pointer;
   background: #f5f5fa;
   color: inherit;
 }
@@ -695,7 +697,7 @@ p {
 
   .logo {
     align-self: center;
-    align-items: unset;
+   
   }
 
   .slash {

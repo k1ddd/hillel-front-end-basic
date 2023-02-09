@@ -153,14 +153,18 @@
 }
 
 .main__team__text {
+  display: block;
   position: absolute;
   font-size: 36px;
-  opacity: 83%;
+  opacity: 80%;
   line-height: 1.22;
   letter-spacing: 13px;
   font-weight: bold;
   color: #ffffff;
-  transform: translate(71%, 85%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
 }
 
 .par__about {
@@ -176,6 +180,7 @@
 
 .about__us__div {
   padding: 30px 0px;
+  position: relative;
 }
 .common__block {
   gap: 30px;
@@ -412,7 +417,7 @@
 
   .logo {
     align-self: center;
-    align-items: unset;
+    
   }
 
   .slash {
@@ -558,7 +563,6 @@
   .main__team__text {
     font-size: 46px;
     letter-spacing: 63px;
-    transform: translate(55%, 150%);
   }
 
   .slick-slide img {
@@ -642,7 +646,6 @@
     font-size: 86px;
     letter-spacing: 63px;
     line-height: 1.21;
-    transform: translate(57%, 100%);
   }
 
   .first__and__second__block {
@@ -722,7 +725,6 @@
 
   .main__team__text {
     font-size: 96px;
-    transform: translate(90%, 149%);
   }
 
   .slick-slide img {
@@ -747,9 +749,6 @@
     min-width: 27%;
   }
 
-  .main__team__text {
-    transform: translate(135%, 200%);
-  }
   .block__stat {
     min-width: 31%;
   }

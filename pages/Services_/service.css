@@ -920,7 +920,6 @@ a:hover {
   background-color: #ffffff;
   border-radius: 8px;
   width: 100%;
-  min-height: 430px;
 }
 
 .publications__title {
@@ -949,6 +948,7 @@ a:hover {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
+  margin-bottom: 30px;
 }
 
 .line__publications {
@@ -1143,7 +1143,6 @@ a:hover {
 
   .logo {
     align-self: center;
-    align-items: unset;
   }
 
   .slash {
