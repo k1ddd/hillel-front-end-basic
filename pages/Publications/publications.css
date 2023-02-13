@@ -403,7 +403,6 @@ a:hover {
 
 .choice-link {
   line-height: 1.25;
-  color: var(--main-color);
   font-weight: 700;
   background-color: transparent;
   padding-left: 30px;
@@ -427,15 +426,18 @@ a:hover {
 }
 
 /* Main ======================================================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .publications__img {
   width: 100%;
-  height: 500px;
-  object-fit: contain;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .center__photo {
   width: 640px;
   height: 400px;
+  object-fit: cover;
 }
 
 .border__line {
@@ -445,11 +447,19 @@ a:hover {
   margin-top: 90px;
 }
 
+.border__line.pub {
+  margin-top: 30px;
+}
+
 .social__icon {
   background-color: #f5f5fa;
   padding: 9px;
   border-radius: 12px;
   object-fit: contain;
+}
+
+.social__icon:hover {
+  background-color: #ededf7;
 }
 
 .publications__wrapper {
@@ -468,7 +478,87 @@ a:hover {
   max-width: 100%;
 }
 
-.publications__card > img {
+.pub__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #323264;
+  line-height: 1.22;
+  margin-top: 30px;
+}
+
+.pub__date {
+  font-size: 12px;
+  font-weight: 700;
+  color: #b3b3ba;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.pub__par {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  margin-bottom: 30px;
+}
+
+.pub__main__tittle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.22;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(100deg, #f0145a, #ef8080);
+}
+
+.pub__title__two {
+  font-size: 22px;
+  font-weight: 700;
+  color: #46466e;
+  line-height: 1.22;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+ol > li::marker {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f0145a;
+  line-height: 1.44;
+}
+
+ol > li {
+  margin-left: 40px;
+}
+
+li > p {
+  margin-bottom: 15px;
+}
+
+.center__par {
+  display: flex;
+  font-size: 14px;
+  color: #b3b3ba;
+  font-weight: 400;
+  line-height: 1.57;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.another__title {
+  font-size: 16px;
+  color: #323264;
+  font-weight: 700;
+  line-height: 1.23;
+  margin-bottom: 15px;
+}
+
+div > .gap__10 {
+  margin-bottom: 60px;
+}
+
+.publications__card > a > img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
@@ -558,6 +648,35 @@ a:hover {
   padding-top: 30px;
 }
 
+.services_ {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #24a3ff;
+  text-transform: uppercase;
+}
+
+.services_:hover,
+.publications__card > a:hover,
+.publications__card > a > h3:hover,
+.services_:hover svg path {
+  color: #f0145a;
+  stroke: #f0145a;
+  color: #f0145a;
+  text-decoration: none;
+}
+
+.our__motto {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(100deg, #f0145a, #ef8080);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.21;
+  padding-bottom: 30px;
+}
+
 .adress.dark {
   color: #323264;
 }
@@ -636,6 +755,15 @@ a:hover {
 
   .card {
     max-width: calc(50% - 15px);
+  }
+  .publications__card:nth-child(1) {
+    width: calc(50% - 15px);
+  }
+  .publications__card:nth-child(2) {
+    width: calc(50% - 15px);
+  }
+  .publications__card:nth-child(3) {
+    width: 100%;
   }
 
   .main__content {
@@ -793,6 +921,22 @@ a:hover {
 
   .grmain__wrapperid {
     display: block;
+  }
+
+  .pub__title {
+    font-size: 30px;
+  }
+
+  .publications__img {
+    height: 400px;
+  }
+
+  .pub__main__tittle {
+    font-size: 38px;
+  }
+
+  .another__title {
+    font-size: 22px;
   }
 
   .menu__up {

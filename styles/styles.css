@@ -895,6 +895,11 @@ a:hover {
   width: 100%;
 }
 
+.public__photo {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
 .publications__title {
   margin-right: 30px;
   margin-left: 30px;
