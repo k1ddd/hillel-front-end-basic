@@ -537,6 +537,11 @@ a:hover {
   right: 0;
 }
 
+.scroll:hover svg circle,
+.scroll:hover svg path {
+  stroke: #f0145a;
+}
+
 /* Tabs ============================================= */
 
 .tabs {
@@ -639,7 +644,7 @@ a:hover {
 .services_:hover svg path {
   color: #f0145a;
   stroke: #f0145a;
-  color: #f0145a;
+
   text-decoration: none;
 }
 
