@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+.publications__card > a:hover,
+.publications__card > a > h3:hover {
+  color: #f0145a;
+  stroke: #f0145a;
+  text-decoration: none;
+}
+
 .offers__main__block {
   display: flex;
   gap: 0;
@@ -74,8 +81,6 @@
 
 /* Offers main text ================================== */
 
-
-
 .block__offers {
   columns: 1;
   gap: 60px;
@@ -95,6 +100,5 @@ li:last-child {
 li::marker {
   color: #f0145a;
 }
-
 
 /*  Modal Window =========================================================================== */
