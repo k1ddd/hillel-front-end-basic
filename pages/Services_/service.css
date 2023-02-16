@@ -658,10 +658,11 @@ a:hover {
 }
 
 .services_:hover,
-.services_block:hover svg path {
+.publications__card > a:hover,
+.publications__card > a > h3:hover,
+.services_:hover svg path {
   color: #f0145a;
   stroke: #f0145a;
-  color: #f0145a;
   text-decoration: none;
 }
 
